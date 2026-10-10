@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rayhanul Islam Shuvo, backend & platform engineer</title>
+<meta name="description" content="Senior Java backend engineer. Projects where I break distributed systems on purpose, measure what fails, and fix it.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="topbar">
+  <div class="wrap">
+    <a class="brand" href="#top"><span class="full">Rayhanul Islam Shuvo</span><span class="short">Rayhan</span></a>
+    <nav class="nav" aria-label="Sections">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- Hero -->
+  <section class="hero band-hero">
+    <div class="wrap hero-grid">
+      <div>
+        <div class="intro-id">
+          <img class="avatar" id="avatar" alt="Rayhanul Islam Shuvo" width="72" height="72" hidden>
+          <div>
+            <p class="who">Rayhanul Islam Shuvo</p>
+            <p class="role">Backend &amp; platform engineer</p>
+          </div>
+        </div>
+        <h1>I break backend systems on purpose, measure what fails, and fix it.</h1>
+        <p class="lede">Senior Java backend engineer and tech lead with 8+ years building microservices on Kubernetes. Each project here starts with a question about how a real system behaves under pressure, and ends with a number.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">See projects</a>
+          <a class="btn ghost" href="https://github.com/Rayhanshuvo">GitHub profile</a>
+        </div>
+      </div>
+
+      <figure class="strip-card" aria-label="One second per bar of a real software release under load. Default setup: about 30 seconds of failed requests. After my changes: none.">
+        <p class="strip-title">One minute of a live release</p>
+        <p class="strip-sub">Real measurements, one bar per second, 200 requests each second.</p>
+        <div class="strip-row">
+          <div class="strip-label"><span>Default setup</span><b>4,646 failed</b></div>
+          <div class="bars" id="strip-before"></div>
+        </div>
+        <div class="strip-row">
+          <div class="strip-label"><span>After my changes</span><b>0 failed</b></div>
+          <div class="bars" id="strip-after"></div>
+        </div>
+        <div class="keys">
+          <span><i class="key" style="background:var(--signal)"></i>served</span>
+          <span><i class="key" style="background:var(--fault)"></i>failed</span>
+          <span><i class="key" style="background:var(--gap)"></i>no response</span>
+        </div>
+      </figure>
+    </div>
+  </section>
+
+  <!-- Topics -->
+  <section class="band alt" id="topics" aria-labelledby="topics-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="topics-title">What I explore</h2>
+        <p>Pick a topic to see its projects. New topics fill in as I finish them.</p>
+      </div>
+      <div class="topics" id="topics-grid"></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section class="band" id="projects" aria-labelledby="projects-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="projects-title">Projects</h2>
+        <p>Every project has a full write-up on GitHub with the code, the raw data and how to reproduce it.</p>
+      </div>
+      <div class="list-head">
+        <p id="list-status"></p>
+        <button type="button" class="clear" id="clear" hidden>Show all projects</button>
+      </div>
+      <div id="project-list" aria-live="polite"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="band alt" id="about" aria-labelledby="about-title">
+    <div class="wrap about-grid">
+      <div class="about-text">
+        <div class="section-head"><h2 id="about-title">About</h2></div>
+        <p>I've spent more than eight years as a backend engineer and tech lead, building microservices with Java and Spring Boot and running them on Kubernetes.</p>
+        <p>Most of what I've learned about distributed systems came from things breaking in production. These projects are my way of breaking them deliberately instead, in a lab, with measurements, so the lessons are written down and reproducible.</p>
+        <p>I'm also doing an MSc in Information Technology (Research) at Universiti Tenaga Nasional, researching predictive autoscaling for Kubernetes microservices.</p>
+      </div>
+      <ul class="facts" aria-label="At a glance">
+        <li><span class="k">Experience</span><span>8+ years, senior backend engineer and tech lead</span></li>
+        <li><span class="k">Languages</span><span>Java, Spring Boot</span></li>
+        <li><span class="k">Platform</span><span>Kubernetes, Docker, AWS</span></li>
+        <li><span class="k">Data</span><span>PostgreSQL, Redis, Kafka</span></li>
+        <li><span class="k">Observability</span><span>Prometheus, Grafana, New Relic</span></li>
+        <li><span class="k">Education</span><span>MSc (Research) in IT, UNITEN, in progress</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="band band-contact" id="contact" aria-labelledby="contact-title">
+    <div class="wrap">
+      <div class="section-head">
+        <h2 id="contact-title">Contact</h2>
+        <p>Open to backend and platform engineering roles.</p>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-card"><p class="k">GitHub</p><a href="https://github.com/Rayhanshuvo">github.com/Rayhanshuvo</a></div>
+        <div class="contact-card"><p class="k">LinkedIn</p><a href="https://www.linkedin.com/in/rayhan-shuvo/">linkedin.com/in/rayhan-shuvo/</a></div>
+        <div class="contact-card"><p class="k">Email</p><span>rayhanshuvo.bd@gmail.com</span></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">Last updated October 2026.</div>
+</footer>
+
+<script>
+// Real per-second data from the zero-downtime-k8s project: [served, failed] requests.
+const STRIP = {"before":[[200,0],[200,0],[200,0],[200,0],[200,0],[200,0],[199,0],[153,37],[17,13],[0,0],[0,0],[0,0],[0,0],[0,165],[0,196],[0,199],[0,199],[0,199],[0,200],[0,195],[0,200],[0,197],[0,121],[0,20],[0,71],[0,179],[0,185],[0,188],[0,186],[0,189],[0,186],[0,190],[0,185],[0,186],[0,190],[0,189],[0,189],[0,191],[31,167],[177,24],[200,0],[200,0],[200,0],[200,0],[200,0],[199,0],[200,0],[201,0],[200,0],[200,0],[200,0],[200,0],[200,0],[200,0],[200,0],[200,0],[200,0],[200,0],[200,0],[200,0]],"after":[[201,0],[200,0],[200,0],[199,0],[201,0],[201,0],[201,0],[198,0],[200,0],[197,0],[203,0],[200,0],[197,0],[202,0],[201,0],[200,0],[200,0],[200,0],[200,0],[201,0],[199,0],[200,0],[201,0],[199,0],[200,0],[198,0],[202,0],[201,0],[200,0],[199,0],[200,0],[200,0],[198,0],[201,0],[200,0],[199,0],[201,0],[200,0],[200,0],[200,0],[200,0],[200,0],[200,0],[200,0],[201,0],[199,0],[200,0],[200,0],[201,0],[199,0],[201,0],[199,0],[200,0],[200,0],[200,0],[201,0],[198,0],[199,0],[198,0],[203,0]]};
+function drawStrip(id, rows) {
+  const el = document.getElementById(id), max = 200;
+  for (const [ok, err] of rows) {
+    const bar = document.createElement("span"); bar.className = "bar";
+    const o = document.createElement("i"); o.className = "ok";
+    o.style.height = (Math.min(ok, max) / max * 100) + "%";
+    const e = document.createElement("i"); e.className = "err";
+    e.style.height = (Math.min(err, max - Math.min(ok, max)) / max * 100) + "%";
+    bar.append(o, e); el.append(bar);
+  }
+}
+drawStrip("strip-before", STRIP.before);
+drawStrip("strip-after", STRIP.after);
+</script>
+<script src="projects.js"></script>
+<script>
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+// profile photo: shown only if PROFILE.photo is set and the file loads
+(function () {
+  const img = document.getElementById("avatar");
+  const src = (typeof PROFILE !== "undefined" && PROFILE.photo) || "";
+  if (!src) return;
+  img.onload = () => { img.hidden = false; };
+  img.src = src;
+})();
+
+const catName = Object.fromEntries(CATEGORIES.map(c => [c.id, c.name]));
+const catColor = Object.fromEntries(CATEGORIES.map(c => [c.id, c.color || "#2f6fe4"]));
+const countOf = id => PROJECTS.filter(p => p.category === id).length;
+
+function storyHTML(p) {
+  return `
+  <article class="story" style="--c:${esc(catColor[p.category] || "#2f6fe4")}">
+    <div>
+      <p class="meta"><span class="cat">${esc(catName[p.category] || p.category)}</span>${p.date ? `<span>${esc(p.date)}</span>` : ""}</p>
+      <h3><a href="${esc(p.link)}">${esc(p.title)}</a></h3>
+      <p class="summary">${esc(p.summary)}</p>
+      ${p.result ? `
+        <p class="result">
+          <span class="num before">${esc(p.result.before)}</span>
+          <span class="to">to</span>
+          <span class="num after">${esc(p.result.after)}</span>
+          <span class="unit">${esc(p.result.unit)}</span>
+        </p>` : ""}
+      ${p.skills ? `<ul class="skills">${p.skills.map(s => `<li>${esc(s)}</li>`).join("")}</ul>` : ""}
+      <a class="more" href="${esc(p.link)}">Read the full write-up</a>
+    </div>
+    ${p.image ? `<a class="thumb" href="${esc(p.link)}" tabindex="-1" aria-hidden="true"><img src="${esc(p.image)}" alt="" loading="lazy"></a>` : ""}
+  </article>`;
+}
+
+const topicsEl = document.getElementById("topics-grid");
+const listEl = document.getElementById("project-list");
+const statusEl = document.getElementById("list-status");
+const clearEl = document.getElementById("clear");
+
+topicsEl.innerHTML = CATEGORIES.map(c => {
+  const n = countOf(c.id);
+  return n
+    ? `<button type="button" class="topic" data-cat="${esc(c.id)}" aria-pressed="false" style="--c:${esc(c.color || "#2f6fe4")}">
+         <span class="t-dot" aria-hidden="true"></span>
+         <span class="t-name">${esc(c.name)}</span>
+         <span class="t-count">${n} project${n === 1 ? "" : "s"}</span>
+       </button>`
+    : `<div class="topic soon" style="--c:${esc(c.color || "#5b616d")}"><span class="t-dot" aria-hidden="true"></span><span class="t-name">${esc(c.name)}</span><span class="t-count">Coming next</span></div>`;
+}).join("");
+
+function render(active, scroll) {
+  const shown = active ? PROJECTS.filter(p => p.category === active) : PROJECTS;
+  listEl.innerHTML = shown.map(storyHTML).join("");
+  statusEl.textContent = active
+    ? `${shown.length} project${shown.length === 1 ? "" : "s"} in ${catName[active]}`
+    : `${PROJECTS.length} project${PROJECTS.length === 1 ? "" : "s"}, newest first`;
+  clearEl.hidden = !active;
+  for (const b of topicsEl.querySelectorAll("button.topic")) b.setAttribute("aria-pressed", String(b.dataset.cat === active));
+  history.replaceState(null, "", active ? "#" + active : location.pathname);
+  if (scroll) document.getElementById("projects").scrollIntoView();
+}
+
+topicsEl.addEventListener("click", e => {
+  const b = e.target.closest("button.topic");
+  if (!b) return;
+  const already = b.getAttribute("aria-pressed") === "true";
+  render(already ? null : b.dataset.cat, !already);
+});
+clearEl.addEventListener("click", () => render(null, false));
+
+const fromHash = location.hash.slice(1);
+render(countOf(fromHash) ? fromHash : null, false);
+</script>
+</body>
+</html>
