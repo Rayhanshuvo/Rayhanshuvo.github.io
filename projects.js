@@ -29,6 +29,28 @@ const CATEGORIES = [
 ];
 
 const PROJECTS = [
+    {
+    category: "aws",
+    title: "What happens when a Kubernetes node dies on AWS, measured",
+
+    summary:
+      "I switched off one of two servers on AWS while 200 requests per second were flowing. " +
+      "The default setup turned one dead server into a 47-second full outage. I found out why and fixed it.",
+
+    result: {
+      before: "8,406",
+      after: "4",
+      unit: "failed requests when a server died",
+    },
+
+    skills: ["AWS EC2", "Pulumi", "K3s multi-node", "Nginx L4", "Spring Boot"],
+
+    image: "assets/node-failure.png",
+    imageAlt: "Successful and failed requests per second while a worker node was stopped, default versus resilient setup",
+
+    link: "https://github.com/Rayhanshuvo/k3s-aws-node-failure",
+    date: "October 2026",
+  },
   {
     category: "kubernetes",
     title: "Zero-downtime deployments on Kubernetes, measured",
